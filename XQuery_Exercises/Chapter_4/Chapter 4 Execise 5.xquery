@@ -8,4 +8,4 @@ declare context item :=document {
 </name>
 } ;
 
-    /name/surname/fn:replace("Krause", "e", "*")
+/name/surname/fn:replace("Krause", "e", "*")

@@ -14,4 +14,4 @@ declare context item := document {
 </book>
 };
 
-fn:concat(/book/author, ".", " ", /book/title, ".", " ", /book/publisher/city, ":"" ", /book/publisher/press, ",", " ", /book/date, ".")
+ fn:concat(/book/author, ".", " ", /book/title, ".", " ", /book/publisher/city, ":"" ", /book/publisher/press, ",", " ", /book/date, ".")
