@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>My Standoff Markup</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   <standOff>
+      <listPerson>
+         <person xml:id="person001">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <state type="rank" subtype="2ndLt"></state>
+            <idno type="serialNumber">0-768485</idno>
+            <persName>DRUGAN, DONALD T.</persName></person>
+         <person xml:id="person002">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <state type="rank" subtype="2ndLt"></state>
+            <idno type="serialNumber">0-775481</idno>
+            <persName>MOHN, JONATHAN V.</persName></person>
+         <person xml:id="person003">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <state type="rank" subtype="2ndLt"></state>
+            <idno type="serialNumber">0-2060421</idno>
+            <persName>WASSERMANN, GERALD M.</persName></person>
+         <person xml:id="person004">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <state type="rank" subtype="TSgt"></state>
+            <idno type="serialNumber">38469636</idno>
+            <persName>PARKER, JURL T.</persName></person>
+         <person xml:id="person005">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <state type="rank" subtype="Sgt"></state>
+            <idno type="serialNumber">39719976</idno>
+            <persName>STEVENS, ROBERT</persName></person>
+         <person xml:id="person006">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <persName>CHINCHILLA, FRANCIS P.</persName></person>
+         <person xml:id="person007">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <persName>HOLLENBECK, CHARLES E.</persName></person>
+         <person xml:id="person008">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <state type="rank" subtype="Capt"></state>
+            <persName>Richard W. Secor</persName></person>
+         <person xml:id="person009"><persName>LINZ</persName></person>
+         <person xml:id="person010"><persName>SCHUTZ</persName></person>
+         <person xml:id="person011"><persName>GROMIG</persName></person>
+         <person xml:id="person012"><persName>WALSDORF</persName></person>
+         <person xml:id="person013"><persName>GLUSING</persName></person>
+         <person xml:id="person014"><persName>ZEUS</persName></person>
+         <person xml:id="person015"><persName>ZEUS</persName></person>
+         <person xml:id="person016"><persName>BARKLAGE</persName></person>
+         <person xml:id="person017"><persName>WIMBRSBACH</persName></person>
+         <person xml:id="person018"><persName>SCHNEIDER</persName></person>
+         <person xml:id="person019"><persName>EICH</persName></person>
+      </listPerson>
+      <listPlace>
+         <place xml:id="place001"><placeName><country type="Nation">Germany</country></placeName></place>
+         <place xml:id="place002"><placeName><geogName>LEUTESDORF FOREST</geogName></placeName></place>
+         <place xml:id="place003"><placeName>BEROD</placeName></place>
+         <place xml:id="place004"><placeName><settlement type="village">LEUTESDORF</settlement></placeName></place>
+               </listPlace>
+      <listOrg>
+         <org xml:id="org001">
+            
+         </org>
+         
+      </listOrg>
+   </standOff>
+</TEI>
