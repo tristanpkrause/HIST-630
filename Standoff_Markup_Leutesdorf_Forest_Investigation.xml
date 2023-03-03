@@ -102,6 +102,14 @@
          <place xml:id="place002"><placeName><geogName>LEUTESDORF FOREST</geogName></placeName></place>
          <place xml:id="place003"><placeName>BEROD</placeName></place>
          <place xml:id="place004"><placeName><settlement type="village">LEUTESDORF</settlement></placeName></place>
+         <place xml:id="place005"><placeName><settlement type="town">KOBLENZ</settlement></placeName></place>
+         <place xml:id="place006"><placeName><settlement type="town">Paris</settlement></placeName></place>
+         <place xml:id="place007"><placeName><settlement type="town">Neuwied</settlement></placeName></place>
+         <place xml:id="place008"><placeName><settlement type="village">HUBERTUSHOF</settlement></placeName></place>
+         <place xml:id="place009"><placeName><settlement type="town">HAMM</settlement></placeName></place>
+         <place xml:id="place010"><placeName><settlement type="village">WOLLENDORF</settlement></placeName></place>
+         <place xml:id="place011"><placeName><settlement type="town">Offenbach</settlement></placeName></place>
+         <place xml:id="place012"><placeName><region>Hessen</region></placeName></place>
                </listPlace>
       <listOrg>
          <org xml:id="org001">
