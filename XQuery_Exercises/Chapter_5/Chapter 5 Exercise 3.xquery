@@ -1,7 +1,7 @@
 xquery version "3.1";
 
-let $names := ("Abigail", "Claire", "Kristen", "Lindsey", "Margaret", "Patrick", "Regan", "Tristan")
+let $books := ("Abigail", "Claire", "Kristen", "Lindsey", "Margaret", "Patrick", "Regan", "Tristan")
 
-for $name in $names
+for $nbook in $books
 
 return fn:concat("hello my names is ", $name, "!")
