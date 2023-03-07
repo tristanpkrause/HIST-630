@@ -1,10 +1,18 @@
 xquery version "3.1";
 
-let $books := ("Abigail", "Claire", "Kristen", "Lindsey", "Margaret", "Patrick", "Regan", "Tristan")
+declare context item := document;
 
-for $nbook in $books
+for $book in books/book
 
-return fn:concat("hello my names is ", $name, "!")(  $name, eq "Tristan", "!")
-
-
+    let $name := $book/author
+    
+return
+    <greeting>
+    {
+    if ($name eq "Jan Gross") then
+    fn:concat("Hallo ", $name, "!")
+    
+    else fn:concat("Hi there ", $name, "!")
+        }
+    </greeting>
 
