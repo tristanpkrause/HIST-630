@@ -1,7 +1,12 @@
 xquery version "3.1";
 
-delcare namespace tei="http://www.tei-c.org/ns/1.0";
 
-delcare function: local:construct-english-list ($persName as xs:string, $forname as xs:string, $surname as xs:string?)
-as elemt (tei:persName)
 
+declare function local:construct-english-list(
+    $list as xs:string*) as xs:string
+    {
+    fn:concat(fn:string-join(fn:subsequence($list, 1, 2), ", and ", fn:subsequence($list, 3)))};
+
+let $names := ("Shinpei Goto", "Gentaro Kodama", "Kenjiro Den")
+
+return local:construct-english-list($names)
