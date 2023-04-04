@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="LeutesdorfForestODD" start="TEI">
+        <moduleRef key="header"/>
+        <moduleRef key="core" exclude="email"/>
+        <moduleRef key="tei"/>
+        <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7"/>
+        <moduleRef key="namesdates"/>
+        <moduleRef key="msdescription"/>
+      </schemaSpec>
+<!--      require ref=-->
+      
+      <!--<elementSpec module="namesdates" ident="persName" mode="change">
+       <content>
+         <sequence preserveOrder="true">
+         <elementRef key="forname"/>
+         <elementRef key="lastname"/>
+         </sequence>
+       </content> 
+        
+        <attList>
+          <attDef ident="type" mode="change" usage="req">
+            <datatype>
+              <dataRef key="teidata.enumerated"/>
+            </datatype>
+            <valList type="closed" mode="replace">
+              <valItem ident="rank">
+                <gloss>role name</gloss>
+                <desc>U.S. military rank</desc>
+              </valItem>
+           </valList>
+          </attDef>
+        </attList>
+      </elementSpec>-->
+    </body>
+  </text>
+</TEI>
