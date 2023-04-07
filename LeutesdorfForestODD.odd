@@ -25,7 +25,7 @@
       </schemaSpec>
 <!--      require ref=-->
       
-      <!--<elementSpec module="namesdates" ident="persName" mode="change">
+      <elementSpec module="namesdates" ident="persName" mode="change">
        <content>
          <sequence preserveOrder="true">
          <elementRef key="forname"/>
@@ -46,7 +46,7 @@
            </valList>
           </attDef>
         </attList>
-      </elementSpec>-->
+      </elementSpec>
     </body>
   </text>
 </TEI>
