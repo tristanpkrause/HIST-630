@@ -23,6 +23,13 @@
         <moduleRef key="namesdates"/>
         <moduleRef key="msdescription"/>
       </schemaSpec>
+     <!-- <attList>
+        <attDef ident="xml:id" usage="req" mode="add">
+          <datatype>
+            <dataRed name="ID"/>
+          </datatype
+        </attDef>
+      </attList>-->
 <!--      require ref=-->
       
       <elementSpec module="namesdates" ident="persName" mode="change">

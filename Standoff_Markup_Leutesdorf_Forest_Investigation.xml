@@ -85,17 +85,39 @@
             <nationality>American</nationality>
             <state type="rank" subtype="Capt"></state>
             <persName>Richard W. Secor</persName></person>
-         <person xml:id="person009"><persName>LINZ</persName></person>
-         <person xml:id="person010"><persName>SCHUTZ</persName></person>
-         <person xml:id="person011"><persName>GROMIG</persName></person>
-         <person xml:id="person012"><persName>WALSDORF</persName></person>
-         <person xml:id="person013"><persName>GLUSING</persName></person>
-         <person xml:id="person014"><persName>ZEUS</persName></person>
-         <person xml:id="person015"><persName>ZEUS</persName></person>
-         <person xml:id="person016"><persName>BARKLAGE</persName></person>
-         <person xml:id="person017"><persName>WIMBRSBACH</persName></person>
-         <person xml:id="person018"><persName>SCHNEIDER</persName></person>
-         <person xml:id="person019"><persName>EICH</persName></person>
+         <person xml:id="person009">
+            <nationality>German</nationality>
+            <persName>LINZ</persName></person>
+         <person xml:id="person010">
+            <nationality>German</nationality>
+            <persName>SCHUTZ</persName></person>
+         <person xml:id="person011">
+            <nationality>German</nationality>
+            <persName>GROMIG</persName></person>
+         <person xml:id="person012">
+            <nationality>German</nationality>
+            <persName>WALSDORF</persName></person>
+         <person xml:id="person013">
+            <nationality>German</nationality>
+            <persName>GLUSING</persName></person>
+         <person xml:id="person014">
+            <nationality>German</nationality>
+            <persName>ZEUS</persName></person>
+         <person xml:id="person015">
+            <nationality>German</nationality>
+            <persName>ZEUS</persName></person>
+         <person xml:id="person016">
+            <nationality>German</nationality>
+            <persName>BARKLAGE</persName></person>
+         <person xml:id="person017">
+            <nationality>German</nationality>
+            <persName>WIMBRSBACH</persName></person>
+         <person xml:id="person018">
+            <nationality>German</nationality>
+            <persName>SCHNEIDER</persName></person>
+         <person xml:id="person019">
+            <nationality>German</nationality>
+            <persName>EICH</persName></person>
       </listPerson>
       <listPlace>
          <place xml:id="place001"><placeName><country type="Nation">Germany</country></placeName></place>
