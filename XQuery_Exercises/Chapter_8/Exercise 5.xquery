@@ -11,18 +11,25 @@ declare variable $doc :=
         </lg>
 </div>;
 
-declare function local:transform($originals as node()*) {
-    for $original in $originals
+declare function local:transform($nodes as node()*) {
+    for $node in $nodes
     return
-        typeswitch ($original)
-            case text() return $original
-            case element(tei:div) return
-                <div>{ local:transform($original/node()) }</div>
-            case element(tei:lg) return
-                <ol>{ local:transform($original/node()) }</ol>
-            case element(tei:l) return
-            <li>{local:transform($original/node())}</li>
-             default return $original
+        typeswitch ($node)
+            case text() 
+                return 
+                    $node
+            case element(div) 
+                return
+                    <div>{local:transform($node/node()) }</div>
+            case element(lg) 
+                return
+                    <ol>{local:transform($node/node()) }</ol>
+            case element(l) 
+                return
+                    <li>{local:transform($node/node())}</li>
+            default 
+                return 
+                    $node
 };
 
 local:transform($doc)

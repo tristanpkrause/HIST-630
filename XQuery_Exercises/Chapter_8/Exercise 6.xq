@@ -18,14 +18,7 @@ declare function local:transform($originals as node()*) {
             case element (tei:p) return <p>{local:transform($original/node())}</p>
             case element (tei:persName) return <a href="{$original/@ref}">{local:transform($original/node())}</a>
             case element (tei:placeName) return <a href="{$original/@ref}">{local:transform($original/node())}</a>
-            case element (tei:lg) return <p>{ local:transform($original/node()) }</p>
-            case element (tei:l) return
-                (
-                    local:transform($original/node()),
-                    if ($original/following-sibling::tei:l) then <br/>
-                    else ()
-                )
-           
+(:item:)         
             default return ()
 };
 
