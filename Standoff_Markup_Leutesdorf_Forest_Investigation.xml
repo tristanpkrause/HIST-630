@@ -118,7 +118,35 @@
          <person xml:id="person019">
             <nationality>German</nationality>
             <persName>EICH</persName></person>
-      </listPerson>
+         <person xml:id="person020">
+            <nationality>German</nationality>
+            <persName>KROHN</persName></person>
+         <person xml:id="person021">
+            <nationality>German</nationality>
+            <persName>ULMERSBACH</persName></person>
+         <person xml:id="person022">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <state type="rank" subtype="PFC"></state>
+            <idno type="serialNumber">13155431</idno>
+            <persName>SMITH, Paul E.</persName></person>
+         <person xml:id="person023">
+            <birth>
+               <placeName></placeName>
+               <date></date>
+            </birth>
+            <nationality>American</nationality>
+            <state type="rank" subtype="1stLt"></state>
+            <idno type="serialNumber"></idno>
+            <persName>SHANLY Arthur</persName></person>
+         <person xml:id="person024">
+            <nationality>German</nationality>
+            <persName>BARKLAGE</persName></person>
+                
+                </listPerson>
       <listPlace>
          <place xml:id="place001"><placeName><country type="Nation">Germany</country></placeName></place>
          <place xml:id="place002"><placeName><geogName>LEUTESDORF FOREST</geogName></placeName></place>
@@ -132,7 +160,8 @@
          <place xml:id="place010"><placeName><settlement type="village">WOLLENDORF</settlement></placeName></place>
          <place xml:id="place011"><placeName><settlement type="town">Offenbach</settlement></placeName></place>
          <place xml:id="place012"><placeName><region>Hessen</region></placeName></place>
-               </listPlace>
+               
+                 </listPlace>
       <listOrg>
          <org xml:id="org001">
             

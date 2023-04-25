@@ -5,13 +5,13 @@
    <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Title</title>
+        <title>Odd Customization for Leutesdorf Forest Investigation Report</title>
       </titleStmt>
       <publicationStmt>
-        <p>Publication Information</p>
+        <authority>Tristan Krause</authority>
       </publicationStmt>
       <sourceDesc>
-        <p>Information about the source</p>
+        <p>Born Digital</p>
       </sourceDesc>
     </fileDesc>
   </teiHeader>
@@ -24,60 +24,64 @@
         <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7"/>
         <moduleRef key="namesdates"/>
         <moduleRef key="msdescription"/>
-      </schemaSpec>
-    <elementSpec ident="persName" module="namesdates" mode="change">
-      <content>
-        <textNode/>
-      </content>
-    <constraintSpec ident="persName" scheme="schematron">
-      <constraint>
-        <sch:rule context="tei:persName">
-         <sch:let name="standoff" value="doc('https://raw.githubusercontent.com/tristanpkrause/HIST-630/main/Standoff_Markup_Leutesdorf_Forest_Investigation.xml')"/>      
-          <sch:let name="personIDs" value="$standoff//person/@xml:id"/>
-          <sch:let name="error" value="."/>
-          <sch:assert test="@ref = $personIDs"
-            ><sch:value-of select="$error"/> will bring doom. Seek shelter immediately and pray to your preferred God(s). Acceptable values are:
-            <sch:value-of select="personIDs"/>
-          </sch:assert>
-        </sch:rule>
-      </constraint>
-    </constraintSpec>
+            
+      <!--Schematron starts here:-->
+      
+      <elementSpec ident="persName" module="namesdates" mode="change">
+        <content>
+            <textNode/>
+        </content>
+        <constraintSpec ident="persName" scheme="schematron">
+            <constraint>
+      <sch:rule context="tei:persName/@ref">
+        <sch:let name="standoff" value="doc('https://raw.githubusercontent.com/tristanpkrause/HIST-630/main/Standoff_Markup_Leutesdorf_Forest_Investigation.xml')"/>   
+        <sch:let name="personIDs" value="$standoff//tei:listPerson/tei:person/@xml:id"/>
+        <sch:let name="personRefValues" value="for $i in $personIDs return concat('#', $i)"/>
+        <sch:let name="error" value="."/>
+        <sch:assert test=". = $personRefValues"
+          ><sch:value-of select="$error"/> will bring doom. Seek shelter immediately and pray to your preferred God(s). Acceptable values are: <sch:value-of select="string-join ($personIDs, ', ')"/>
+        </sch:assert>
+      </sch:rule>
+         </constraint>
+        </constraintSpec>
       <attList>
         <attDef ident="ref" mode="change" usage="req"/>   
       </attList>
-    </elementSpec>
+      </elementSpec>
       
-    <elementSpec ident="placeName" module="namesdates" mode="change">
-      <content>
-        <textNode/>
-      </content>
-      <constraintSpec ident="placeName" scheme="schematron">
-        <constraint>
-        <sch:rule context="tei:placeName">
-          <sch:let name="standoff" value="doc('https://raw.githubusercontent.com/tristanpkrause/HIST-630/main/Standoff_Markup_Leutesdorf_Forest_Investigation.xml')"/>      
-          <sch:let name="placeIDs" value="$standoff//place/@xml:id"/>
-          <sch:let name="error" value="."/>
-          <sch:assert test="@ref = $placeIDs"
-            ><sch:value-of select="$error"/> will summon Uhr, Scion of Darkness. Acceptable values are:
-            <sch:value-of select="placeIDs"/>
-          </sch:assert>
-        </sch:rule>
-       </constraint>
-      </constraintSpec>
-      <attList>
-        <attDef ident="ref" mode="change" usage="req"/>
-      </attList>
-    </elementSpec>  
+      <elementSpec ident="placeName" module="namesdates" mode="change">
+        <content>
+            <textNode/>
+        </content>
+        <constraintSpec ident="placeName" scheme="schematron">
+            <constraint>
+      <sch:rule context="tei:placeName/@ref">
+        <sch:let name="standoff" value="doc('https://raw.githubusercontent.com/tristanpkrause/HIST-630/main/Standoff_Markup_Leutesdorf_Forest_Investigation.xml')"/>      
+        <sch:let name="placeIDs" value="$standoff//tei:listPlace/tei:place/@xml:id"/>
+        <sch:let name="placeRefValues" value="for $i in $placeIDs return concat('#', $i)"/>
+        <sch:let name="error" value="."/>
+        <sch:assert test=". = $placeRefValues"
+          ><sch:value-of select="$error"/> will summon Uhr, Scion of Darkness. Acceptable values are:
+          <sch:value-of select="string-join ($placeIDs, ', ')"/>
+        </sch:assert>
+      </sch:rule>
+        </constraint>
+        </constraintSpec>
+        <attList>
+            <attDef ident="ref" mode="change" usage="req"/>
+        </attList>
+    </elementSpec>
+      <!--Schematron ends here:-->
        
-    <elementSpec module="namesdates" ident="persName" mode="change">
+    <!--<elementSpec module="namesdates" ident="persName" mode="change">
        <content>
          <sequence preserveOrder="true">
          <elementRef key="forname"/>
          <elementRef key="lastname"/>
          </sequence>
-       </content> 
+       </content> -->
         
-        <attList>
+        <!--<attList>
           <attDef ident="type" mode="change" usage="req">
             <datatype>
               <dataRef key="teidata.enumerated"/>
@@ -90,7 +94,8 @@
            </valList>
           </attDef>
         </attList>
-      </elementSpec>
+      </elementSpec>-->
+      </schemaSpec>
     </body>
   </text>
 </TEI>
