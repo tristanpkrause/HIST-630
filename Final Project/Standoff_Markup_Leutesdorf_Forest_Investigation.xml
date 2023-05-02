@@ -6,17 +6,19 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>My Standoff Markup</title>
+            <title>Standoff Markup for Leutesdorf Forest Investigation</title>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <p>Ecoded for Ditigal Humanities 630 Soring 2023, Texas A and M University</p>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital</p>
          </sourceDesc>
       </fileDesc>
   </teiHeader>
-   <standOff>
+   <!--<standOff>-->
+      <text>
+         <body>
       <listPerson>
          <person xml:id="person001">
             <birth>
@@ -168,5 +170,8 @@
          </org>
          
       </listOrg>
-   </standOff>
+   <!--</standOff>-->
+         </body>
+      </text>
+     
 </TEI>
